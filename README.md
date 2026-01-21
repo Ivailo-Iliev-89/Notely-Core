@@ -13,10 +13,13 @@ A simple Django CRUD application for managing personal notes.
 - Python
 - Django
 - Bootstrap
+- 
+## Instructions to setup
 
-## How to Run
+1. Clone the repository:
+2. ```bash
+3. git clone https://github.com/ivailoiliev89-netizen/Simple-Notely-app.git
+4. pip install -r requirements.txt
+5. python manage.py migrate
+6. python manage.py runserver
 
-1. ```bash
-2. pip install -r requirements.txt
-3. python manage.py migrate
-4. python manage.py runserver
