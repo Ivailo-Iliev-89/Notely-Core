@@ -1,5 +1,6 @@
 # Simple Notely App
 
+Link to project : https://ivailoiliev89-netizen.github.io/Simple-Notely-app/
 A simple Django CRUD application for managing personal notes.
 
 ## Features
