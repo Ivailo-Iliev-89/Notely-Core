@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-<h3>Hello {{ request.user.username }}</h3>
-<p><a class="btn btn-primary" href="{% url 'note-list' %}">Your Notes</a></p>
+
+<div class="card shadow sm p-4">
+    <h3>Hello {{ request.user.username }}</h3>
+    <p class="mt-3">
+        <a class="btn btn-primary" href="{% url 'note-list' %}">Your Notes</a>
+    </p>
+</div>
 {% endblock %}
