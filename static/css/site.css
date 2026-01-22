@@ -1,2 +1,72 @@
-body { padding-bottom: 2rem; }
-pre { white-space: pre-wrap; }
+body {
+
+font-size: 16px;
+color: #212529;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-text {
+animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.notely-img {
+
+border: 8px solid white;
+border-radius: 20px;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+transition: all 0.4s ease;
+object-fit: cover;
+
+}
+
+.notely-img:hover {
+
+transform: rotate(2deg) scale(1.05);
+border-color: aqua;
+}
+
+.card {
+
+background-color: aqua;
+color: #d63384;
+font-family: 'Comic Sans MS' ,cursive;
+transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+border: none;
+border-radius: 15px;
+overflow: hidden;
+
+}
+
+.card:hover {
+
+background-color: gold;
+color: #000;
+transform: translateY(-10px);
+box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+
+}
+
+.stretched-link::after {
+background-color: transparent;
+}
+
+footer {
+font-size: 14px;
+color: #6c757d;
+background-color: white;
+border-top: 1px solid #dee2e6;
+}
