@@ -17,7 +17,7 @@ Notely is a Django-based web application, designed for managing personal notes w
 - Bootstrap
 - HTML
 - CSS
-- 
+
 ## Instructions to setup
 
 1. Clone the repository:
