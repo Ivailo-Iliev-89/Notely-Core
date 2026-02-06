@@ -16,5 +16,4 @@ def register(request):
 
 @login_required
 def dashboard(request):
-
     return render(request, 'accounts/dashboard.html')
