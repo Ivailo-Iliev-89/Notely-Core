@@ -11,9 +11,10 @@ def register(request):
             return redirect('login')
     else:  # if method = GET
         form = UserCreationForm()
-        return render(request, 'accounts/register.html', {'form': form})
+    return render(request, 'accounts/register.html', {'form': form})
 
 
 @login_required
 def dashboard(request):
+
     return render(request, 'accounts/dashboard.html')
