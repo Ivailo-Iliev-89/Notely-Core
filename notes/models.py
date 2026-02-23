@@ -15,9 +15,9 @@ class Note(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField(blank=True)
     tags = models.ManyToManyField(Tag, blank=True, related_name='tags')
+    is_pinned = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    # show the new one first
     class Meta:
         ordering = ['-created_at']
 

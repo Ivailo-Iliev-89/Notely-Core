@@ -4,7 +4,7 @@ from django.views.generic import ListView, DetailView, UpdateView, CreateView, D
 from rest_framework import viewsets, permissions
 from .serializers import NoteSerializer
 from django import forms
-from .models import Tag,Note
+from .models import Tag, Note
 from django.db.models import Q
 
 
@@ -18,7 +18,7 @@ class NoteListView(OwnerQuerySetMixin, ListView):
     model = Note
     template_name = 'notes/note_list.html'
     context_object_name = 'notes'
-    paginate_by = 5  # for 5 notes at page
+    paginate_by = 5 
 
     def get_queryset(self):
         queryset = super().get_queryset()
@@ -49,7 +49,7 @@ class NoteCreateView(LoginRequiredMixin, CreateView):
     success_url = reverse_lazy('note-list')
 
     def get_form(self, form_class=None):
-        """"Change tags vision --> to checkboxes"""
+        """"Change tags vision to checkboxes"""
         form = super().get_form(form_class)
         form.fields['tags'].widget = forms.CheckboxSelectMultiple()
         form.fields['tags'].queryset = Tag.objects.all()
@@ -67,7 +67,6 @@ class NoteUpdateView(OwnerQuerySetMixin, UpdateView):
     success_url = reverse_lazy('note-list')
 
     def get_form(self, form_class=None):
-        """"Change tags vision --> to checkboxes"""
         form = super().get_form(form_class)
         form.fields['tags'].widget = forms.CheckboxSelectMultiple()
         form.fields['tags'].queryset = Tag.objects.all()
@@ -79,8 +78,6 @@ class NoteDeleteView(OwnerQuerySetMixin, DeleteView):
     template_name = 'notes/note_delete.html'
     success_url = reverse_lazy('note-list')
 
-
-# permissions blocks the changes if you are not the owner
 
 class IsOwnerReadOnly(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):

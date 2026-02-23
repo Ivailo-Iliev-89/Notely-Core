@@ -1,13 +1,12 @@
+/* Global Layout */
+html,body {height:100%;}
 body {
-
-font-size: 16px;
-color: #212529;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -18,55 +17,37 @@ min-height: 100vh;
         transform: translateY(0);
     }
 }
+.fade-in-text {animation: fadeInUp 1s ease-out forwards;}
 
-.fade-in-text {
-animation: fadeInUp 0.8s ease-out forwards;
-}
-
+/* Cards */
 .notely-img {
-
-border: 8px solid white;
-border-radius: 20px;
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-transition: all 0.4s ease;
-object-fit: cover;
-
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    object-fit: cover;
 }
-
 .notely-img:hover {
-
-transform: rotate(2deg) scale(1.05);
-border-color: aqua;
+    transform: rotate(2deg) scale(1.05);
+    border-color: gray;
 }
-
 .card {
-
-background-color: aqua;
-color: #d63384;
-font-family: 'Comic Sans MS' ,cursive;
-transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-border: none;
-border-radius: 15px;
-overflow: hidden;
-
+    background-color:rgba(199, 1, 1);
+    color: #111;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
 }
-
 .card:hover {
-
-background-color: gold;
-color: #000;
-transform: translateY(-10px);
-box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
-
+    background-color: rgb(100, 98, 98);
+    color: #2ab16d;
+    transform: translateY(10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
 }
+.stretched-link::after {background-color: transparent;}
 
-.stretched-link::after {
-background-color: transparent;
-}
-
-footer {
-font-size: 14px;
-color: #6c757d;
-background-color: white;
-border-top: 1px solid #dee2e6;
-}
+/* Footer */
+footer {font-size: 14px; color: whitesmoke;font-family: Verdana, Geneva, Tahoma, sans-serif}
+footer span { color:rgb(243, 35, 35); font-family: Georgia, 'Times New Roman', Times, serif}
