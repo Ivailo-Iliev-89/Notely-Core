@@ -32,20 +32,32 @@ body {
     border-color: gray;
 }
 .card {
-    background-color:rgba(199, 1, 1);
-    color: #111;
+    background-color:rgb(179, 50, 50);
+    color: #0d1013;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    border: none;
+    border: 2px solid #343a40;
     border-radius: 15px;
     overflow: hidden;
 }
 .card:hover {
-    background-color: rgb(100, 98, 98);
-    color: #2ab16d;
-    transform: translateY(10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+    background-color: rgb(228, 208, 208) ;
+    color:#dc3545;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4) !important;
 }
+
+/* Note Details */
+.note-content{line-height: 1.6;}
+.note-content h1, .note-content h2, .note-content h3 {
+    color: #ffca28;
+    margin-top: 20px;
+    border-bottom: 1px solid #495057;
+    padding-bottom: 5px;
+}
+.note-content strong {color: #f32323;font-weight: bold;}
+.note-content ul {color: #ced4da;padding-left: 20px;}
+.note-content p {color: #232425;}
 .stretched-link::after {background-color: transparent;}
 
 /* Footer */

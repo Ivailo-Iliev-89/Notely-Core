@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
+{% load markdown_extras %}
 {% block content %}
 
 <div class="card shadow">
     <div class="card-body">
         <h2>{{ note.title }}</h2>
-        <p class="text-muted">Created on: {{ note.created_at|date:"Y-m-d H:i" }}</p>
+        <p class="text-muted">Created on: {{ note.created_at|date:"d-M-Y" }}</p>
         <hr>
 
         <div class="note-content">
-            {{ note.content|linebreaks }}
+            {{ note.content|markdown|safe }}
         </div>
 
         <hr>

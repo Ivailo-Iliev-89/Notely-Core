@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Note, Tag
+from .models import Note, Tag, Category
 
 
 @admin.register(Note)
@@ -9,3 +9,4 @@ class NoteAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Tag)
+admin.site.register(Category)
