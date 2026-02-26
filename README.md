@@ -36,6 +36,7 @@ It combines an intuitive user interface with powerful organizational tools like 
 - Clone the repository:
 - ```bash
 - git clone https://github.com/ivailoiliev89-netizen/Simple-Notely-app.git
+- **Create** a .env file and populate it with your DB credentials (see settings.py for required keys)
 - pip install -r requirements.txt
 - python manage.py makemigrations
 - python manage.py migrate
