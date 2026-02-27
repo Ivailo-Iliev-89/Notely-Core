@@ -1,5 +1,5 @@
-# Notely App
-### Smart Note-Taking System with Markdown Support & REST API
+# Notely Core
+### Smart Note-Taking System with Markdown Support and REST API
 
 ***Notely***  is a robust Django-based application, ***engineered*** for seamless personal information management.
 It combines an intuitive user interface with ***powerful organizational tools*** like dynamic tagging, categorical filtering, and real-time search.
