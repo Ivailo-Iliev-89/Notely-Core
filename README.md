@@ -12,7 +12,7 @@ It combines an intuitive user interface with ***powerful organizational tools***
 - ***Search Engine*** :  ***Developed a comprehensive search logic*** that queries across titles, content, and tags simultaneously using ***Django `Q` objects***.
 - ***State Management*** :  ***Added "Pinned Notes" functionality*** to keep information at the top of the dashboard using custom ordering logic.
 - ***API*** :  Built with ***Django REST Framework (DRF) endpoints***, making the backend ready for future mobile or desktop client integrations.
-- ***Responsive UX*** :  ***Utilizes*** Bootstrap 5 with custom CSS animations, featuring with a card layout for optimal readability.
+- ***Responsive UX*** :  ***Utilizes*** Bootstrap 5 with custom CSS animations featuring with a card layout for optimal readability.
 
 
 ## Tech Stack
