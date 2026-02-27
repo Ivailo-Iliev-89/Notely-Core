@@ -17,7 +17,7 @@ It combines an intuitive user interface with ***powerful organizational tools***
 
 ## Tech Stack
 
-- ***Backend*** :  Python , Django
+- ***Backend*** :  Python, Django
 - ***Frontend*** :  JavaScript, Bootstrap 5, Markdown-it, CSS
 - **Database** :  PostgreSQL ( for Production ) / SQLite ( for Development) 
 - ***API*** :  Django REST Framework (DRF)
