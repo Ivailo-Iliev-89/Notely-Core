@@ -15,6 +15,18 @@ It combines an intuitive user interface with ***powerful organizational tools***
 - ***Responsive UX*** :  ***Utilizes*** Bootstrap 5 with custom CSS animations featuring with a card layout for optimal readability.
 
 
+## Preview
+
+#### Responsive Landing Page
+![Landing Page](screenshots/notely-main.png)
+
+#### Interactive Note Editor (Dynamic Focus & States)
+![Editor](screenshots/notely-note-hover.png)
+
+#### Smart Dashboard (Pinned Notes & Categorical Filtering)
+![Dashboard](screenshots/notely-pinned.png)
+
+
 ## Tech Stack
 
 - ***Backend*** :  Python, Django
